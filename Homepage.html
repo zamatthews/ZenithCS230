@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<title>MU Elections</title>
+		
+		<script>
+		        function showLoginForm(){
+				
+                var Userinfo = document.getElementById('loginForm');
+                while(Userinfo.hasChildNodes()){
+                    Userinfo.removeChild(Userinfo.firstChild);
+                }
+				
+                userInfo = document.createElement("form");
+                Userinfo.setAttribute("method","post");
+                Userinfo.setAttribute("action","processUser.php");
+
+                var txtName = document.createTextNode("User Name: ");
+                var txtPassword = document.createTextNode("Password: ");
+                
+                var inputUser = document.createElement("input");
+                inputUser.type = "text";
+                inputUser.name = "userName";
+
+                var inputPassword = document.createElement("input");
+                inputPassword.type = "text";
+                inputPassword.name = "Password";
+				
+				var grpUser = document.createElement("p");
+                grpUser.appendChild(txtName);
+                grpUser.appendChild(inputUser);
+
+                var grpPassword = document.createElement("p");
+                grpPassword.appendChild(txtPassword);
+                grpPassword.appendChild(inputPassword);
+				
+				var btnSubmit = document.createElement("input");
+                btnSubmit.type = "submit";
+                btnSubmit.value = "Submit";
+				btnSubmit
+
+                Userinfo.appendChild(grpUser);
+                Userinfo.appendChild(grpPassword);
+				Userinfo.appendChild(btnSubmit);
+
+                document.getElementById('loginForm').appendChild(Userinfo);
+            }              
+		
+		
+		</script>
+		
+    </head>
+
+    <body>
+       
+	   <table>
+  <tr>
+    <td id = "side" rowspan = 2>
+	<p id = "loginForm"> 
+		<input type = submit value = "Login" onclick = "showLoginForm()"></input>
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br><br><br>
+	LINKS<br>
+	LINKS<br>
+	LINKS<br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	</td>
+    <th id = "top"><h1>Welcome<h1></th>
+  </tr>
+  <tr>
+    <td align = center style="vertical-align:top">
+	
+	<img src="http://www.profightdb.com/img/wrestlers/thumbs-600/4d54a6c767johncena.jpg" alt="Mountain View">
+	
+	</td>
+  </tr>
+</table>
+	   
+    </body>
+</html>
