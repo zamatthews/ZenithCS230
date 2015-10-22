@@ -1,0 +1,36 @@
+body {
+    background-color: LightGoldenRodYellow ;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    color: #FF6600;
+	text-align: center;
+}
+h2 {
+	color: black;
+	font-size: 100%; 
+}
+
+table {
+    border-collapse: collapse;
+	height: 100%;
+	width: 100%;
+}
+
+table, th, td {
+    border: 0;
+}
+
+td#side{
+	background-color:lightGreen;
+	width: 15%;
+	text-align: center;
+	
+}
+
+th#top{
+	background-color:lightBlue;
+	text-align: center;
+}
