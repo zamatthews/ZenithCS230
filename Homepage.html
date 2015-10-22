@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="./Style.css" rel="stylesheet" type="text/css">
 		<title>MU Elections</title>
 		
 		<script>
 		        function showLoginForm(){
 				
-                var Userinfo = document.getElementById('loginForm');
-                while(Userinfo.hasChildNodes()){
-                    Userinfo.removeChild(Userinfo.firstChild);
+                var userinfo = document.getElementById('loginForm');
+                while(userinfo.hasChildNodes()){
+                    userinfo.removeChild(userinfo.firstChild);
                 }
 				
-                userInfo = document.createElement("form");
-                Userinfo.setAttribute("method","post");
-                Userinfo.setAttribute("action","processUser.php");
+                userinfo = document.createElement("form");
+                userinfo.setAttribute("method","post");
+                userinfo.setAttribute("action","processUser.php");
 
                 var txtName = document.createTextNode("User Name: ");
                 var txtPassword = document.createTextNode("Password: ");
@@ -38,13 +38,12 @@
 				var btnSubmit = document.createElement("input");
                 btnSubmit.type = "submit";
                 btnSubmit.value = "Submit";
-				btnSubmit
 
-                Userinfo.appendChild(grpUser);
-                Userinfo.appendChild(grpPassword);
-				Userinfo.appendChild(btnSubmit);
+                userinfo.appendChild(grpUser);
+                userinfo.appendChild(grpPassword);
+				userinfo.appendChild(btnSubmit);
 
-                document.getElementById('loginForm').appendChild(Userinfo);
+                document.getElementById("loginForm").appendChild(userinfo);
             }              
 		
 		
@@ -58,7 +57,7 @@
   <tr>
     <td id = "side" rowspan = 2>
 	<p id = "loginForm"> 
-		<input type = submit value = "Login" onclick = "showLoginForm()"></input>
+		<input type = "submit" value = "Login" onclick = "showLoginForm()"></input>
 	</p>
 	<br>
 	<br>
