@@ -27,10 +27,16 @@ td#side{
 	background-color:lightGreen;
 	width: 15%;
 	text-align: center;
-	
 }
 
 th#top{
 	background-color:lightBlue;
 	text-align: center;
+	height: 100px;
+}
+
+td#main{
+	
+	text-align:center;
+	vertical-align:top;
 }
