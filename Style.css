@@ -1,4 +1,5 @@
 body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: LightGoldenRodYellow ;
 	margin: 0;
 	padding: 0;
@@ -15,18 +16,12 @@ h2 {
 
 table {
     border-collapse: collapse;
-	height: 100%;
-	width: 100%;
+	height:100vh;
+	width:100%;
 }
 
 table, th, td {
     border: 0;
-}
-
-td#side{
-	background-color:lightGreen;
-	width: 15%;
-	text-align: center;
 }
 
 th#top{
@@ -40,3 +35,20 @@ td#main{
 	text-align:center;
 	vertical-align:top;
 }
+
+td#sideLogin{
+	width: 15%;
+	background-color:lightBlue;
+	height:100px;
+	text-align:center
+}
+td#sideLinks{
+	padding-top: 20px;
+	padding-left: 20px;
+	background-color:lightBlue;
+	text-align:left;
+	vertical-align:top;
+}
+
+
+
