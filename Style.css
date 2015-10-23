@@ -1,0 +1,54 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: LightGoldenRodYellow ;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    color: #FF6600;
+	text-align: center;
+}
+h2 {
+	color: black;
+	font-size: 100%; 
+}
+
+table {
+    border-collapse: collapse;
+	height:100vh;
+	width:100%;
+}
+
+table, th, td {
+    border: 0;
+}
+
+th#top{
+	background-color:lightBlue;
+	text-align: center;
+	height: 100px;
+}
+
+td#main{
+	
+	text-align:center;
+	vertical-align:top;
+}
+
+td#sideLogin{
+	width: 15%;
+	background-color:lightBlue;
+	height:100px;
+	text-align:center
+}
+td#sideLinks{
+	padding-top: 20px;
+	padding-left: 20px;
+	background-color:lightBlue;
+	text-align:left;
+	vertical-align:top;
+}
+
+
+
