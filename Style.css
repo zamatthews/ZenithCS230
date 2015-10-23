@@ -1,3 +1,4 @@
+
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: LightGoldenRodYellow ;
@@ -14,41 +15,43 @@ h2 {
 	font-size: 100%; 
 }
 
-table {
-    border-collapse: collapse;
-	height:100vh;
-	width:100%;
+div{
+	color: white;
+	background-color: darkBlue;
 }
 
-table, th, td {
-    border: 0;
-}
-
-th#top{
-	background-color:lightBlue;
+div#top{
 	text-align: center;
-	height: 100px;
+	float: right;
+	height: 75px;
+	width: 80%;
 }
 
-td#main{
-	
+div#sideLogin{
+	float: left;
+	width: 20%;
+	height: 220px;
 	text-align:center;
-	vertical-align:top;
 }
 
-td#sideLogin{
-	width: 15%;
-	background-color:lightBlue;
-	height:100px;
-	text-align:center
-}
-td#sideLinks{
+div#sideLinks{
+	clear:left;
+	float:left;
+	width: 17%;
+	height: 100vh;
+	padding-left: 3%;
 	padding-top: 20px;
-	padding-left: 20px;
-	background-color:lightBlue;
 	text-align:left;
 	vertical-align:top;
 }
 
-
-
+div#main{
+	color: black;
+	text-align:center;
+	vertical-align:top;
+	float:right;
+	width:80%;
+	height:100vh;
+	background-image: url(http://i1.kym-cdn.com/photos/images/newsfeed/000/777/908/28a.gif);
+	background-color: transparent;
+}
