@@ -3,78 +3,25 @@
     <head>
         <link href="./Style.css" rel="stylesheet" type="text/css">
 		<title>MU Elections</title>
-		
-		<script>
-		        function showLoginForm(){
-				
-                var userinfo = document.getElementById('loginForm');
-                while(userinfo.hasChildNodes()){
-                    userinfo.removeChild(userinfo.firstChild);
-                }
-				
-                userinfo = document.createElement("form");
-                userinfo.setAttribute("method","post");
-                userinfo.setAttribute("action","processUser.php");
-
-                var txtName = document.createTextNode("User Name: ");
-                var txtPassword = document.createTextNode("Password: ");
-                
-                var inputUser = document.createElement("input");
-                inputUser.type = "text";
-                inputUser.name = "userName";
-
-                var inputPassword = document.createElement("input");
-                inputPassword.type = "password";
-                inputPassword.name = "Password";
-				
-				var grpUser = document.createElement("p");
-                grpUser.appendChild(txtName);
-                grpUser.appendChild(inputUser);
-
-                var grpPassword = document.createElement("p");
-                grpPassword.appendChild(txtPassword);
-                grpPassword.appendChild(inputPassword);
-				
-				var btnSubmit = document.createElement("input");
-                btnSubmit.type = "submit";
-                btnSubmit.value = "Submit";
-
-                userinfo.appendChild(grpUser);
-                userinfo.appendChild(grpPassword);
-				userinfo.appendChild(btnSubmit);
-
-                document.getElementById("loginForm").appendChild(userinfo);
-            }              
-		
-		
-		</script>
-		
+		<script src="login.js" type="text/javascript" ></script>		
     </head>
-
     <body>
-       
 	   <table>
   <tr>
-    <td id = "side" rowspan = 2>
+    <td id = "sideLogin">
 	<p id = "loginForm"> 
 		<input type = "submit" value = "Login" onclick = "showLoginForm()"></input>
 	</p>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br><br><br>
-	LINKS<br>
-	LINKS<br>
-	LINKS<br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	
 	</td>
     <th id = "top"><h1>Morgantown University Elections<h1></th>
   </tr>
   <tr>
+	<td id = sideLinks>
+		LINKS<br>
+		LINKS<br>
+		LINKS<br>
+	</td>
     <td id = "main" background = "http://i1.kym-cdn.com/photos/images/newsfeed/000/777/908/28a.gif">
-	 text text text text text
 	</td>
   </tr>
 </table>
