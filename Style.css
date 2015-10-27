@@ -56,5 +56,30 @@ div#main{
 }
 
 a{
-	color: white;
+	color:white;
 }
+
+a#main{
+	color:black;
+}
+
+input[type=submit]{
+	font-weight: bold;
+	background-color: blue;
+	color: white;
+	border-color: black;
+	border:2px solid #456879;
+	border-radius:10px;
+}
+
+input[type=text]{
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+
