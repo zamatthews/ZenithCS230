@@ -61,6 +61,7 @@ a{
 
 a#main{
 	color:black;
+	font
 }
 
 input[type=submit]{
@@ -80,6 +81,18 @@ input[type=text]{
 	margin: 5px;
 	padding: 5px;
 }
+
+input[type=radio]{
+	background-color: #F0F0F0;
+	
+}
+
+table
+{ 
+margin-left: auto;
+margin-right: auto;
+}
+
 
 
 
