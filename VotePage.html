@@ -9,13 +9,42 @@
     <body>
 <!-- div for the login form -->
     <div id = "sideLogin">
+	<p id = "loginForm"> 
+		
+	</p>
 	</div>
 <!-- div for the title bar, may add more to later -->
     <div id = "top"><h1>Morgantown University Elections<h1></div>
 <!-- div for the main, the only thing that changes for each page -->
     <div id = "main">
-		<br><br><br><br>
-		<a style="color: black" href="./VotePage.html"> Debate Club Presidential Election</a>
+	
+		<table style="width:25%" text-align: right>
+		  <tr>
+			<td>Tim Temple</td>	
+			<td><input id="1" type="radio" ></td>
+		  </tr>
+		  <tr>
+			<td>Edward Wong Hau Pepelu Tivrusky IV</td>	
+			<td><input id="1" type="radio" name="group1"></td>
+		  </tr>
+		  <tr>
+			<td>Dakota Grandall</td>	
+			<td><input id="1" type="radio" name="group1"></td>
+		  </tr>
+		  <tr>
+			<td>Bradley Kimura</td>	
+			<td><input id="1" type="radio" name="group1"></td>
+		  </tr>
+		  <tr>
+			<td>Freddison Hawley</td>	
+			<td><input id="1" type="radio" name="group1"></td>
+		  </tr>
+		  <tr>
+			<td>Chance</td>	
+			<td><input id="1" type="radio" name="group1"></td>
+		  </tr>
+		</table>
+		<input type="submit" onclick="location.href='./Congratulations.html';" value="Confirm" />
 	</div>	
 <!-- div for the sideLinks. Does not change -->		
 		<div id = "sideLinks">
@@ -25,7 +54,6 @@
 	<a href="./EditElections.html">Add/Edit Elections</a> <br><br>
 		</div>
     </body>
-	
-	<script>checkLogin();</script>
-	
+	<script>showLoginInfo();</script>
 </html>
+
