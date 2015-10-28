@@ -55,17 +55,17 @@ div#main{
 	background-color: transparent;
 }
 
-a:link{
+a#sideLink:link{
 	color:white;
 	text-decoration:none;
 }
 
-a:visited{
+a#sideLink:visited{
 	color:white;
 	text-decoration:none;
 }
 
-a:hover{
+a#sideLink:hover{
 	font-size: 110%;
 	color: #FF6600;
 }

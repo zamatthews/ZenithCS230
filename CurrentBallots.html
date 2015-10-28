@@ -5,30 +5,21 @@
 		<title>MU Elections</title>
 		<script src="login.js" type="text/javascript" ></script>		
     </head>
-	
     <body>
 <!-- div for the login form -->
-    <div id = "sideLogin">
-		<p id = "loginForm"> 
-		
-	</p>
-	</div>
-<!-- div for the title bar, may add more to later -->
-    <div id = "top"><h1>Morgantown University Elections<h1></div>
+    <div id = "sideLogin"></div>
+<!-- div for the title bar-->
+    <div id = "top"></div>
 <!-- div for the main, the only thing that changes for each page -->
+
     <div id = "main">
 		<br><br><br><br>
 		<a style="color: black" href="./VotePage.html"> Debate Club Presidential Election</a>
 	</div>	
+	
 <!-- div for the sideLinks. Does not change -->		
-		<div id = "sideLinks">
-	<a href="./Homepage.html">Home</a> <br><br>
-	<a href="./CurrentBallots.html">View Current Ballots</a> <br><br>
-	<a href="./PreviousBallots.html">View Past Elections</a> <br><br>
-	<a href="./EditElections.html">Add/Edit Elections</a> <br><br>
-		</div>
+		<div id = "sideLinks"></div>
     </body>
-	
-	<script>showLoginInfo();</script>
-	
+	<!--This functions adds in everything that is consistant throughout all the pages-->
+	<script>populatePage();</script>
 </html>
