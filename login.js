@@ -6,7 +6,6 @@ function getType(){
 	return document.cookie.split(';')[1];
 }
 
- 
  function showLoginInfo(){
 	 side = document.getElementById("sideLogin");
 	 side.innerHTML = "";
@@ -73,3 +72,8 @@ function populatePage(){
 	populateTitle();
 	showLoginInfo();
 }
+
+
+
+
+

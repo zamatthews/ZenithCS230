@@ -3,7 +3,8 @@
     <head>
         <link href="./Style.css" rel="stylesheet" type="text/css">
 		<title>MU Elections</title>
-		<script src="login.js" type="text/javascript" ></script>		
+		<script src="login.js" type="text/javascript" ></script>	
+		<script src="create.js" type="text/javascript" ></script>
     </head>
     <body>
 <!-- div for the login form -->
@@ -13,12 +14,37 @@
 <!-- div for the main, the only thing that changes for each page -->
 
     <div id = "main">
-		Get to work, Zach!
+		<form id = "ballot" action = "createBallot.php">
+			<p id = "ballotInfo">
+			
+			</p>
+			<button onClick = "addNewSection">New Section</button>
+			<br>
+			<input type = "submit" value = "Submit"></input>
+		<form>
 	</div>	
 	
 <!-- div for the sideLinks. Does not change -->		
 		<div id = "sideLinks"></div>
     </body>
 	<!--This functions adds in everything that is consistant throughout all the pages-->
-	<script>populatePage();</script>
+	<script>
+		populatePage();
+		addSection();
+	</script>
 </html>
+
+<!--
+
+	1. Begin: has option to add section, has a section created by default
+	2. A section has an add option button, and below it, an add write in button
+	3. Add section will also create a remove section button below, the remove button is ONLY at the bottom section
+	4. Add option will add a radio button with id 'section[sectionnumber]'
+	5. the radio button has remove similar to the section but to the left
+	6. Add write in will add a greyed out text box and a remove option to the left
+	7. Once a candidate/writein created, submit appears below the add section button
+
+
+-->
+
+
