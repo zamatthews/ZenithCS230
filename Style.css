@@ -80,6 +80,10 @@ button, input[type=submit]{
 	margin: 2px;
 }
 
+button#delete{
+	color: red;
+}
+
 input[type=text]{
 	border:2px solid #456879;
 	border-radius:10px;

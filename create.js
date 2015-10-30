@@ -2,6 +2,10 @@ function addSection(){
 
 }
 
+function addNewSection(){
+	
+}
+
 function addOption(){
 
 }
@@ -9,3 +13,5 @@ function addOption(){
 function addWritein(){
 
 }
+
+
