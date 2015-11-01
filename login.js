@@ -45,7 +45,7 @@ function populateLinks(){
 	var addLink = document.createElement('a');
 	addLink.href = "./EditElections.html"
 	addLink.setAttribute("id", "sideLink");
-	addLink.appendChild(document.createTextNode("Add/Edit Ballots"));
+	addLink.appendChild(document.createTextNode("Add Ballots"));
 	
 	sideLinks.appendChild(homeLink);
 	sideLinks.appendChild(document.createElement('br'));
