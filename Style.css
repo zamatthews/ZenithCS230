@@ -15,6 +15,10 @@ h2 {
 	font-size: 100%; 
 }
 
+h2#sectionNo{
+	font-size: 150%;
+}
+
 div{
 	color: white;
 	background-color: darkBlue;
@@ -81,7 +85,15 @@ button, input[type=submit]{
 }
 
 button#delete{
-	color: red;
+	background-color: red;
+}
+
+button.greenButton{
+	background-color: darkGreen;
+}
+
+button.redButton{
+	background-color:red;
 }
 
 input[type=text]{
@@ -91,6 +103,16 @@ input[type=text]{
 	width: 230px;
 	margin: 5px;
 	padding: 5px;
+}
+
+
+input[type=text].head{
+	width: 350px;
+	text-align: center;
+}
+
+input[type=text].writeinSample{
+	background-color: lightGray;
 }
 
 input[type=radio]{

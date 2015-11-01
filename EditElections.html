@@ -16,11 +16,12 @@
     <div id = "main">
 		<form id = "ballot" action = "createBallot.php">
 			<p id = "ballotInfo">
-			
 			</p>
-			<button type = "button" onClick = "addNewSection()">New Section</button>
+			<p id = 'buttonArea'>
+			<button type = "button" onClick = "addSection()" id = "addButton">New Section</button>
 			<br>
-			<input type = "submit" value = "Submit"></input>
+			<input type = "submit" value = "Submit" id = "submitButton"></input>
+			</p>
 		<form>
 	</div>	
 	
@@ -30,7 +31,6 @@
 	<!--This functions adds in everything that is consistant throughout all the pages-->
 	<script>
 		populatePage();
-		addSection();
 	</script>
 </html>
 
