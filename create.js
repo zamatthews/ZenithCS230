@@ -1,6 +1,10 @@
 var sectionCounter = 0;
 var elementCounters = [];
 
+function authenticate(){
+	
+}
+
 function addDeleteButton(){
 	var deleteSection = document.createElement('button');
 	deleteSection.type = "button";
@@ -67,12 +71,12 @@ function removeAWritein(sectionNo){
 	var addButton = document.getElementById("writeinDelete");
 	addButton.setAttribute("class", "greenButton");
 	addButton.innerHTML = "Add Writein Option";
-	addButton.setAttribute("ID", "addWritein" + sectionCounter);
-	addButton.setAttribute("onclick", "addAWritein(" + sectionCounter + ")");
+	addButton.setAttribute("ID", "addWritein" + sectionNo);
+	addButton.setAttribute("onclick", "addAWritein(" + sectionNo + ")");
 }
 
 function addAnOption(sectionNo){
-	elementCounters[sectionNo]++;
+	
 	var p = document.getElementById("section" + sectionNo);
 	var optionContainer = document.createElement('p');
 	optionContainer.setAttribute("ID", "optionContainer" + elementCounters[sectionNo]);
@@ -80,7 +84,7 @@ function addAnOption(sectionNo){
 	var option = document.createElement('input');
 	option.type = "text";
 	option.setAttribute("class", "option" + sectionNo)
-	option.setAttribute("ID", "section" + sectionCounter + "option" + elementCounters[sectionNo]);
+	option.setAttribute("ID", "section" + sectionNo + "option" + elementCounters[sectionNo]);
 	option.setAttribute("placeholder", "Enter a name for this option");
 	
 
@@ -94,7 +98,7 @@ function addAnOption(sectionNo){
 	optionContainer.appendChild(deleteOption);
 	
 	p.appendChild(optionContainer);
-	
+	elementCounters[sectionNo]++;
 }
 
 function addAWritein(sectionNo){
