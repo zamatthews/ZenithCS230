@@ -12,7 +12,10 @@ h1 {
 }
 h2 {
 	color: black;
-	font-size: 100%; 
+}
+
+h2.homeText{
+	font-size:125%;
 }
 
 h2#sectionNo{
