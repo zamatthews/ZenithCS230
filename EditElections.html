@@ -15,12 +15,31 @@
 
     <div id = "main">
 		<form id = "ballot" action = "createBallot.php">
+			<p id = "date/time">
+				Start Date:
+				<input type = "number" id = "startMonth" required = "required" class = "dateTime" min="1" max="12">/
+				<input type = "number" id = "startDay" required = "required" class = "dateTime" min ="1" max="31">/
+				<input type = "number" id = "startYear" required = "required" class = "dateTime" min="2015" max ="2016">/
+				Start Time:
+				<input type = "number" id = "startHour" required = "required" class = "dateTime" min="0" max="23">
+				:
+				<input type = "number" id = "startMinute" required = "required" class = "dateTime" min ="0" max="60">
+				<br>
+				End Date:
+				<input type = "number" id = "endMonth" required = "required" class = "dateTime" min="1" max="12">/
+				<input type = "number" id = "endDay" required = "required" class = "dateTime" min ="1" max="31">/
+				<input type = "number" id = "endYear" required = "required" class = "dateTime" min="2015" max ="2016">/
+				End Time:
+				<input type = "number" id = "endHour" required = "required" class = "dateTime" min="0" max="23">
+				:
+				<input type = "number" id = "endMinute" required = "required" class = "dateTime" min ="0" max="60">
+			</p>			
 			<p id = "ballotInfo">
 			</p>
 			<p id = 'buttonArea'>
 			<button type = "button" onClick = "addSection()" id = "addButton">New Section</button>
 			<br>
-			<input type = "submit" value = "Submit" id = "submitButton"></input>
+			<input type = "submit" value = "Submit" id = "submitButton">
 			</p>
 		<form>
 	</div>	
