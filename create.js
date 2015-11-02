@@ -33,6 +33,7 @@ function addSection(){
 	title.type = "text";
 	title.setAttribute("Class", "head");
 	title.setAttribute("ID", "header" + sectionCounter);
+	title.setAttribute("required", "required");
 	title.setAttribute("placeholder", "Enter a title for this section");
 	
 	var optionAdd = document.createElement('button');
@@ -85,6 +86,7 @@ function addAnOption(sectionNo){
 	option.type = "text";
 	option.setAttribute("class", "option" + sectionNo)
 	option.setAttribute("ID", "section" + sectionNo + "option" + elementCounters[sectionNo]);
+	option.setAttribute("required", "required");
 	option.setAttribute("placeholder", "Enter a name for this option");
 	
 
