@@ -99,6 +99,11 @@ button.redButton{
 	background-color:red;
 }
 
+button.grayButton, input[type=submit].grayButton{
+	background-color:lightGray;
+	color:black;
+}
+
 input[type=text]{
 	border:2px solid #456879;
 	border-radius:10px;
@@ -132,5 +137,4 @@ table
 margin-left: auto;
 margin-right: auto;
 }
-
 

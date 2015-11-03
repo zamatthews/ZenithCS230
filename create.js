@@ -123,3 +123,15 @@ function deleteLastSection(){
 	sectionCounter--;
 	if(sectionCounter == 1) document.getElementById("buttonArea").removeChild(document.getElementById("delete"));
 }
+
+function disable(){
+	document.getElementById("addButton").setAttribute("class", "grayButton");
+	document.getElementById("addButton").setAttribute("disabled", "disabled");
+	document.getElementById("submitButton").setAttribute("class", "grayButton");
+	document.getElementById("submitButton").setAttribute("disabled", "disabled");
+}
+
+function popup(){
+	alert("ERROR: You do not have access to this page");
+	window.location.href = "./Homepage.html";
+}

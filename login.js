@@ -1,9 +1,9 @@
 function getUsername(){
-	return document.cookie.split(';')[0];
+	return document.cookie.split('@')[0];
 }
 
 function getType(){
-	return document.cookie.split(';')[1];
+	return document.cookie.split('@')[1];
 }
 
  function showLoginInfo(){
@@ -19,7 +19,7 @@ function getType(){
 function createCookieTest(){
 	var user = document.getElementById("user").value;
 	var type = document.getElementById("type").value;
-	document.cookie = user + ';' + type;
+	document.cookie = user + "@" + type;
 	showLoginInfo();
 }
 
@@ -54,9 +54,11 @@ function populateLinks(){
 	sideLinks.appendChild(document.createElement('br'));
 	sideLinks.appendChild(document.createElement('br'));
 	sideLinks.appendChild(pastLink);
-	sideLinks.appendChild(document.createElement('br'));
-	sideLinks.appendChild(document.createElement('br'));
-	sideLinks.appendChild(addLink);
+	if(getType() == "commissioner"){
+		sideLinks.appendChild(document.createElement('br'));
+		sideLinks.appendChild(document.createElement('br'));
+		sideLinks.appendChild(addLink);
+	}
 	
 }
 
@@ -71,6 +73,10 @@ function populatePage(){
 	populateLinks();
 	populateTitle();
 	showLoginInfo();
+}
+
+function authorizeCommissioner(){
+	 return (getType() == "commissioner");
 }
 
 
