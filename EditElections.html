@@ -15,7 +15,7 @@
 
     <div id = "main">
 		<form id = "ballot" action = "createBallot.php">
-			<p id = "date/time">
+			<p id = "FixedOptions">
 				Start Date:
 				<input type = "number" id = "startMonth" required = "required" class = "dateTime" min="1" max="12">/
 				<input type = "number" id = "startDay" required = "required" class = "dateTime" min ="1" max="31">/
@@ -33,6 +33,9 @@
 				<input type = "number" id = "endHour" required = "required" class = "dateTime" min="0" max="23">
 				:
 				<input type = "number" id = "endMinute" required = "required" class = "dateTime" min ="0" max="60">
+				<br>
+				<br>
+				<input type = "text" id = "password" placeholder = "Poll Password(Optional) ">
 			</p>			
 			<p id = "ballotInfo">
 			<input type = "text" id = "title" class = "head" placeholder = "Title For The Ballot" required = "required">
