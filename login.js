@@ -2,25 +2,36 @@ function getUsername(){
 	return document.cookie.split('@')[0];
 }
 
-function getType(){
-	return document.cookie.split('@')[1];
+function isCommissioner(){
+	return (document.cookie.split('@')[1] == "1");
+}
+
+function isEligible(){
+	return (document.cookie.split('@')[2] == "1");
 }
 
  function showLoginInfo(){
 	 side = document.getElementById("sideLogin");
 	 side.innerHTML = "";
 	 var p = document.createElement('p');
-	if(document.cookie.length > 1){
+	if(document.cookie.split('@').length == 3){
 	p.appendChild(document.createTextNode("Hello, " + getUsername()));
 	}
 	side.appendChild(p);
 }
 
 function createCookieTest(){
-	var user = document.getElementById("user").value;
-	var type = document.getElementById("type").value;
-	document.cookie = user + "@" + type;
-	showLoginInfo();
+	var cookieString = document.getElementById("user").value;
+	if(document.getElementsByName("commissioner")[0].checked) 
+		cookieString += "@1";
+	else cookieString += "@0";
+	
+	if(document.getElementsByName("eligible")[0].checked) 
+		cookieString += "@1";
+	else cookieString += "@0";
+	
+	document.cookie = cookieString
+	window.location.reload();
 }
 
 function populateLinks(){
@@ -54,7 +65,7 @@ function populateLinks(){
 	sideLinks.appendChild(document.createElement('br'));
 	sideLinks.appendChild(document.createElement('br'));
 	sideLinks.appendChild(pastLink);
-	if(getType() == "commissioner"){
+	if(isCommissioner()){
 		sideLinks.appendChild(document.createElement('br'));
 		sideLinks.appendChild(document.createElement('br'));
 		sideLinks.appendChild(addLink);
@@ -73,10 +84,6 @@ function populatePage(){
 	populateLinks();
 	populateTitle();
 	showLoginInfo();
-}
-
-function authorizeCommissioner(){
-	 return (getType() == "commissioner");
 }
 
 

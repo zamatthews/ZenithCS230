@@ -13,8 +13,15 @@
 <!-- div for the main, the only thing that changes for each page -->
 
     <div id = "main" text-align = "center">
-		<input type = "text" id = "user"><br>
-		<input type = "text" id = "type"><br>
+		<input type = "text" id = "user" required = "required" placeholder = "username"><br>
+		Commissioner?: 
+		 true<input type="radio" name="commissioner" value="true">
+		false<input type="radio" name="commissioner" value="false" checked = "checked">
+		<br>
+		Eligible?: 
+		true<input type="radio" name="eligible" value="true" checked = "checked">
+		false<input type="radio" name="eligible" value="false">
+		<br>
 		<input type = "submit" value = "submit" onclick = "createCookieTest()">
 	</div>	
 	
