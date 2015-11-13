@@ -15,9 +15,10 @@ function isEligible(){
 	 side.innerHTML = "";
 	 var p = document.createElement('p');
 	if(document.cookie.split('@').length == 3){
-	p.appendChild(document.createTextNode("Hello, " + getUsername()));
+		p.appendChild(document.createTextNode("Hello, " + getUsername()));
 	}
 	side.appendChild(p);
+
 }
 
 function createCookieTest(){
@@ -36,7 +37,6 @@ function createCookieTest(){
 
 function populateLinks(){
 	var sideLinks = document.getElementById("sideLinks");
-	var br = document.createElement('br');
 	
 	var homeLink = document.createElement('a');
 	homeLink.href = "./Homepage.html"
