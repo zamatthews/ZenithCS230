@@ -23,5 +23,10 @@
 		<div id = "sideLinks"></div>
     </body>
 	<!--This functions adds in everything that is consistant throughout all the pages-->
-	<script>populatePage();</script>
+	<script>
+		if (!isEligible()){
+			document.getElementById("main").innerHTML = "<br><br><br><br>Sorry!<br> You are ineligible to vote.";
+		}
+		populatePage();
+	</script>
 </html>
