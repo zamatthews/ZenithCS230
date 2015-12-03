@@ -14,6 +14,18 @@
 
     <div id = "main">
 	<script>
+		PasswordPrompt();
+		function PasswordPrompt() {
+		    var pass = prompt("Please Enter the Password");
+		    
+		    if (pass == "Frog") {
+		    }
+		    else{
+			alert("Wrong Password!");
+			document.location.href = "./CurrentBallots.html";
+		    }
+		}
+		
 		function showTextBox(){
 			document.getElementById("textbox").innerHTML = "<input type='text' id='WriteIn' placeholder='Write-in' required><br>"
 			
