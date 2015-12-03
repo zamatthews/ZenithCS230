@@ -13,35 +13,53 @@
 <!-- div for the main, the only thing that changes for each page -->
 
     <div id = "main">
-	<form action="processvote.php" method="post">
+	<script>
+		function showTextBox(){
+			document.getElementById("textbox").innerHTML = "<input type='text' id='WriteIn' placeholder='Write-in' required><br>"
+			
+		}
+
+		function c() {
+			if (confirm("Are you sure?") == true) {
+				document.location.href = "./Congratulations.html";
+			}
+			else{
+			
+			}
+		}
+	</script>
+		<h2>Debate Club Presidential Election</h2>
+		<hr>
+		<h3>Candidates</h3>
 		<table style="width:25%" text-align: right>
 		  <tr>
 			<td>Tim Temple</td>	
-			<td><input id="1" type="radio" name="group1" ></td>
+			<td><input id="1" type="radio" name="group1" required onclick="document.getElementById('textbox').innerHTML = ''"></td>
 		  </tr>
 		  <tr>
 			<td>Edward Wong Hau Pepelu Tivrusky IV</td>	
-			<td><input id="2" type="radio" name="group1"></td>
+			<td><input id="2" type="radio" name="group1" onclick="document.getElementById('textbox').innerHTML = ''"></td>
 		  </tr>
 		  <tr>
 			<td>Dakota Grandall</td>	
-			<td><input id="3" type="radio" name="group1"></td>
+			<td><input id="3" type="radio" name="group1" onclick="document.getElementById('textbox').innerHTML = ''"></td>
 		  </tr>
 		  <tr>
 			<td>Bradley Kimura</td>	
-			<td><input id="4" type="radio" name="group1"></td>
+			<td><input id="4" type="radio" name="group1" onclick="document.getElementById('textbox').innerHTML = ''"></td>
 		  </tr>
 		  <tr>
 			<td>Freddison Hawley</td>	
-			<td><input id="5" type="radio" name="group1"></td>
+			<td><input id="5" type="radio" name="group1" onclick="document.getElementById('textbox').innerHTML = ''"></td>
 		  </tr>
 		  <tr>
 			<td>Chance</td>	
-			<td><input id="6" type="radio" name="group1"></td>
+			<td><input id="6" type="radio" name="group1" onclick="document.getElementById('textbox').innerHTML = ''"></td>
 		  </tr>
 		</table>
-		<input type="text" id="WriteIn" placeholder="Write-in"/><br>
-		<input type="submit" value="Confirm" />
+		Write-In<input id="7" type="radio" name=group1 onclick="showTextBox()">
+		<p id="textbox"></p>
+		<button type = "button" onClick="c()">Confirm</button>
 	</form>
 	</div>	
 	
