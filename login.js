@@ -70,7 +70,7 @@ function populateLinks(){
 	var addCommissionerLink = document.createElement('a');
 	addCommissionerLink.href = "./addCommissioner.html";
 	addCommissionerLink.setAttribute("id", "sideLink");
-	addCommissionerLink.appendChild(document.createTextNode("Add/Remove Commissioner"));
+	addCommissionerLink.appendChild(document.createTextNode("Add Commissioner"));
 	
 	sideLinks.appendChild(homeLink);
 	sideLinks.appendChild(document.createElement('br'));

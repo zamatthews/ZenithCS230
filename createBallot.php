@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 <body>
-
+<head>
+<meta http-equiv="refresh" content="0; url=./Created.html">
+</head>
 <?php
-header('Location: '.$./Created.html);
 echo "redirecting";
 ?>
 
