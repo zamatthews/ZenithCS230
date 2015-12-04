@@ -14,7 +14,7 @@
 <!-- div for the main, the only thing that changes for each page -->
 
     <div id = "main">
-		<form id = "ballot" action = "createBallot.php">
+		<form id = "ballot" action = "createBallot.php" onsubmit="return confirm('Are you sure?');">
 			<p id = "FixedOptions">
 				Start Date:
 				<input type = "number" id = "startMonth" required = "required" class = "dateTime" min="1" max="12">/
@@ -43,7 +43,7 @@
 			<p id = 'buttonArea'>
 			<button type = "button" onClick = "addSection()" id = "addButton">New Section</button>
 			<br>
-			<input type = "submit" value = "Submit" id = "submitButton">
+			<input type = "submit" value = "Submit" id = "submitButton" >
 			</p>
 		<form>
 	</div>	
