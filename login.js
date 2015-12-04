@@ -34,8 +34,7 @@ function createCookieTest(){
 	if(document.getElementsByName("eligible")[0].checked) 
 		cookieString += "@1";
 	else cookieString += "@0";
-	
-	document.cookie = cookieString
+	document.cookie = cookieString;
 	window.location.reload();
 }
 

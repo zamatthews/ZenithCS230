@@ -4,6 +4,7 @@
         <link href="./Style.css" rel="stylesheet" type="text/css">
 		<title>MU Elections</title>
 		<script src="login.js" type="text/javascript" ></script>		
+		<script src="poll.js" type="text/javascript" ></script>		
     </head>
     <body>
 <!-- div for the login form -->
@@ -13,37 +14,11 @@
 <!-- div for the main, the only thing that changes for each page -->
 
     <div id = "main">
-	<script>
-		PasswordPrompt();
-		function PasswordPrompt() {
-		    var pass = prompt("Please Enter the Password");
-		    
-		    if (pass == "Frog") {
-		    }
-		    else{
-			alert("Wrong Password!");
-			document.location.href = "./CurrentBallots.html";
-		    }
-		}
-		
-		function showTextBox(){
-			document.getElementById("textbox").innerHTML = "<input type='text' id='WriteIn' placeholder='Write-in' required><br>"
-			
-		}
-
-		function c() {
-			if (confirm("Are you sure?") == true) {
-				document.location.href = "./Congratulations.html";
-			}
-			else{
-			
-			}
-		}
-	</script>
+	
 		<h2>Cartography Club Elections</h2>
 		<hr>
 		<h3>Treasurer</h3>
-		<form action="javascript:c();">
+		<form action="javascript:c('0003');">
 		<table style="width:25%" text-align: right>
 		  <tr>
 			<td>Bill Fraser</td>	
@@ -102,7 +77,7 @@
 			<td><input id="4" type="radio" name="group3"></td>
 		  </tr>
 		</table>
-		<input type="submit" value="Confirm">
+		<input type="submit" value="Confirm" id = "voteButton">
 	</form>
 	</div>	
 	
@@ -110,5 +85,14 @@
 		<div id = "sideLinks"></div>
     </body>
 	<!--This functions adds in everything that is consistant throughout all the pages-->
-	<script>populatePage();</script>
+	<script>
+			populatePage();
+			
+			if(hasVoted("0003")){
+			alert("You have already voted!");
+			disableSubmit();
+			document.location.href = "./CurrentBallots.html";	
+			}
+			PasswordPrompt("frog");
+	</script>
 </html>
